@@ -1,0 +1,550 @@
+.bx-wrapper{
+    margin-bottom: 85px; position: relative; width:100%; cursor: default;
+}
+.slide1,
+.slide2,
+.slide3,
+.slide4{
+    position: relative; width:100%; box-sizing: border-box;
+}
+.slide1 img,
+.slide2 img,
+.slide3 img,
+.slide4 img {
+    display: block; width: 100%; opacity: 0; 
+}
+.slide1 >div{
+    position: absolute;
+}
+.slide1 >div >div:last-of-type{
+    background-color: rgba(255, 255, 255,0.8);
+    box-sizing: border-box; 
+}
+.slide1 >div >div:last-of-type b{
+    display: block;
+}
+.slide1 >div >div:last-of-type a{
+    background-color: #000; display: block; text-align: center;
+}
+.slide2 div {
+    position: absolute; background-color: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+}
+.slide2 div b {
+    display: block;
+}
+.slide2 div a {
+    background-color: #000; display: block; text-align: center; box-sizing: border-box;
+    font-size: 14px; 
+}
+.slide3 div {
+    position: absolute;
+}
+.slide4 a {
+    position: absolute; background-color: #000; display: block; text-align: center;
+    transform: translateX(-50%); left:50%; font-size: 14px;
+}
+.bx-default-pager {
+    position: absolute; text-align: right;
+}
+.bx-default-pager .bx-pager-item {
+    display: inline-block;
+}
+.bx-default-pager a {
+    display: inline-block; background-color: rgba(85,85,85,0.8); border-radius: 50%; font-size: 0; line-height: 0; transition: background-color 0.3s;
+}
+.bx-default-pager a.active,
+.bx-default-pager a:hover{
+    background-color: #212121;
+}
+.carouselWrap{
+    margin-bottom: 85px;
+}
+.carouselWrap .bx-wrapper {
+  position: relative; margin: 0 auto;
+}
+.carouselWrap h3{
+    text-align: center; margin-bottom: 50px;
+}
+.carouselNewList > li {
+  text-align: center; 
+}
+.carouselNewList li figure{
+    margin: 0 auto;
+}
+.carouselNewList li figure a{
+    display: block; margin-bottom: 5px;
+}
+.carouselNewList li figure a img{
+    width:100%; display: block; 
+}
+.carouselNewList li figcaption dl dd:first-of-type,
+.carouselNewList li figcaption dl dd:last-of-type {
+  font-size: 12px;
+}
+.bx-controls-direction a{
+    display: block; background-repeat: no-repeat; width:15px; height:21px; top:40%;
+    text-indent: -9999px; position: absolute;
+}
+.bx-controls-direction a.bx-prev{
+    background-image: url('../images/btn_left.png');
+}
+.bx-controls-direction a.bx-next{
+    background-image: url('../images/btn_right.png');
+}
+section.detailWrap .detailitem >div:last-child .customPager li {
+    max-width: 85px; max-height: 85px; position: relative; 
+}
+section.detailWrap .detailitem >div:last-child .customPager li a{
+    display: block;
+}
+section.detailWrap .detailitem >div:last-child .customPager li a img{
+    width:100%; max-height:85px;
+}
+section.detailWrap .detailitem >div:last-child .customPager li a.active::before,
+section.detailWrap .detailitem >div:last-child .customPager li a::before{
+    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+    background-color: rgba(0, 0, 0, 0.8); opacity: 0; z-index: 1; transition:opacity 0.25s;
+}
+section.detailWrap .detailitem >div:last-child .customPager li a.active::before{
+    opacity: 0.8;
+}
+section.detailWrap .detailitem >div:last-child .customPager li:active a.active::before,
+section.detailWrap .detailitem >div:last-child .customPager li:active a::before{
+    opacity: 0.8;
+}
+
+section.detailWrap > div:nth-child(6){
+    position: relative; width:100%;
+}
+section.detailWrap > div:nth-child(6) .bx-viewport{
+    margin-bottom: 85px; height: auto !important;
+}
+section.detailWrap > div:nth-child(6) .bx-wrapper{
+    margin: 0 auto;
+}
+.suggestionList li{
+    height: auto !important; margin: 0 auto;
+}
+.suggestionList li figure{
+    text-align: center; margin: 0 auto;
+}
+.suggestionList li figure a{
+    display: block;
+}
+.suggestionList li figure a img{
+    width:100%; display: block;
+}
+.suggestionList li figure figcaption dl dt{
+    font-size: 12px; margin-bottom: 20px; text-align: center;
+}
+.suggestionList li figure figcaption dl dd:last-of-type{
+    font-size: 14px; line-height: 20px;
+}
+
+@media screen and (max-width:767px){
+/*mainSlider*/
+.indexContainer .bx-wrapper .bx-viewport{
+    height:280px !important;
+}
+.bx-wrapper .bx-viewport ul li{
+    height:280px; min-width:280px;
+}
+.slide1,
+.slide2,
+.slide3,
+.slide4 {
+    background-size: contain; background-repeat: no-repeat; background-position: center;
+}
+.slide1 { 
+  background-image: url('../images/mobile_ban_00.png'); background-position: right;
+  background-color: #f0ead8; 
+}
+.slide2 { 
+  background-image: url('../images/mobile_ban_01.png');
+  background-size: cover;
+}
+.slide3 { 
+  background-image: url('../images/mobile_ban_02.png');
+  background-color: #fff;
+}
+.slide4 { 
+  background-image: url('../images/mobile_ban_03.png');
+  background-color: #f8f6f7;
+}
+.slide1 >div{
+    top:10.71%; left:3.5%; 
+}
+.slide1 >div >div:first-of-type p:first-of-type{
+    font-size: 15px;  margin-bottom: 10px;
+}
+.slide1 >div >div:first-of-type p:last-of-type{
+    font-size: 12px;  margin-bottom: 20px;  line-height: 18px;
+}
+.slide1 >div >div:last-of-type{
+    width: 70%; padding:5%;
+}
+.slide1 >div >div:last-of-type b{
+    font-size: 12px;  margin-bottom: 10px;
+}
+.slide1 >div >div:last-of-type p{
+    font-size: 12px;  margin-bottom: 20px; line-height: 18px;
+}
+.slide1 >div >div:last-of-type a{
+    line-height: 30px; font-size: 12px; width:73%;
+}
+.slide2 div {
+    width: 80%; padding: 2%; left: 50%; bottom:9%; max-width:250px; transform: translateX(-50%);
+}
+.slide2 div b {
+    font-size: 12px; margin-bottom: 10px;
+}
+.slide2 div p {
+    font-size: 12px; margin-bottom: 20px;
+}
+.slide2 div a {
+    line-height: 30px; width:67%; max-width:137px;
+}
+.slide3 div {
+    top: 4%; margin: 0 auto; width:100%;
+}
+.slide3 div p{
+    text-align: center;
+}
+.slide3 div p:first-of-type {
+    font-size: 15px;  margin-bottom: 10px;
+}
+.slide3 div p:last-of-type {
+    font-size: 12px; 
+}
+.slide4 a {
+    bottom: 9%; line-height: 30px;  width:48.92%; max-width:137px; 
+}
+.bx-default-pager {
+    bottom: 3.57%; left: 50%; transform: translateX(-50%); 
+}
+.bx-default-pager .bx-pager-item {
+    margin-left: 5px;
+}
+.bx-default-pager a {
+    width: 10px; height: 10px; margin: 0 auto;
+}
+/*newitem carousel*/
+.carouselWrap h3{
+    font-size: 14px;
+}
+.carouselNewList > li {
+  min-width: 220px; text-align: center; 
+}
+.carouselNewList li figure{
+    margin: 0 auto;
+}
+.carouselNewList li figure a{
+    height:200px;
+}
+.carouselNewList li figure a img{
+    height:200px;
+}
+.carouselNewList li figcaption dl dt {
+  font-size: 14px; margin-bottom: 15px;
+}
+.carouselNewList li figcaption dl dd:first-of-type {
+  margin-bottom: 10px;
+}
+.bx-controls-direction a.bx-prev{
+    left:10px; 
+}
+.bx-controls-direction a.bx-next{
+    right:10px;
+}
+section.detailWrap .detailitem .bx-wrapper {
+  margin-bottom: 50px; box-sizing: border-box; overflow: hidden;
+}
+section.detailWrap .detailitem .bx-wrapper,
+section.detailWrap .detailitem .bx-wrapper .bx-viewport{
+    height: auto !important;
+}
+section.detailWrap .detailitem .bx-wrapper .detailImage,
+section.detailWrap .detailitem .bx-wrapper .detailImage li{
+    height: auto !important; min-height: 0 !important;
+}
+section.detailWrap .detailitem .bx-wrapper .detailImage li img{
+    display: block; width: 100%; height: auto; object-fit: contain;
+}
+section.detailWrap .detailitem >div:last-child .customPager {
+    width:100%; overflow-y: hidden; white-space: nowrap; 
+}
+section.detailWrap .detailitem >div:last-child .customPager li {
+    width: 33%; display: inline-block; 
+}
+section.detailWrap .detailitem >div:last-child .customPager li:not(:first-of-type){
+    margin-left: 1%;
+}
+.suggestionList li figure a{
+    margin-bottom: 15px;
+}
+.suggestionList li figure figcaption dl dd:first-of-type{
+    font-size: 14px; line-height: 20px; margin:0 auto 15px; width:120px;
+    
+}
+section.detailWrap > div:nth-child(6) .bx-wrapper .bx-controls-direction .bx-prev,
+section.detailWrap > div:nth-child(6) .bx-wrapper .bx-controls-direction .bx-next{
+    display:block;
+}
+} 
+@media screen and (min-width: 768px) and (max-width:1279px){
+
+/*mainSlider*/
+.slide1 {
+    position: relative; width: 100%; box-sizing: border-box;
+}
+.slide1 >div{
+    top:14.25%; left:5.8%; 
+}
+.slide1 >div >div:first-of-type p:first-of-type{
+    font-size: 20px;  margin-bottom: 20px;
+}
+.slide1 >div >div:first-of-type p:last-of-type{
+    font-size: 15px; margin-bottom: 10px;
+}
+.slide1 >div >div:last-of-type{
+    width: 255px; padding:40px 0 35px 30px; 
+}
+.slide1 >div >div:last-of-type b{
+    font-size: 15px; margin-bottom: 20px;
+}
+.slide1 >div >div:last-of-type p{
+    font-size: 12px; font-weight: 300; margin-bottom: 15px;
+}
+.slide1 >div >div:last-of-type a{
+    line-height: 40px; max-width: 153px; font-size: 12px;
+}
+.slide2 div {
+    width: 255px; padding: 35px 30px;  left: 11%; bottom:3%;
+}
+.slide2 div b {
+    font-size: 15px; margin-bottom: 20px;
+}
+.slide2 div p {
+    font-size: 12px;  margin-bottom: 15px;
+}
+.slide2 div a {
+    line-height: 40px; max-width: 153px;
+}
+.slide3 div {
+    max-width: 468px; left: 5.8%; top: 32.5%; 
+}
+.slide3 div p:first-of-type {
+    font-size: 20px;  margin-bottom: 20px;
+}
+.slide3 div p:last-of-type {
+    font-size: 15px;
+}
+.slide4 a {
+    bottom: 7.5%; line-height: 40px; width: 153px; 
+}
+.bx-default-pager {
+    right: 7.6%; bottom: 6.25%;  
+}
+.bx-default-pager .bx-pager-item {
+    margin-left: 10px;
+}
+/*newitem carousel*/
+.carouselWrap h3{
+    font-size: 18px;
+}
+.carouselNewList > li {
+  min-width: 250px; 
+}
+.carouselNewList li figcaption dl dt {
+  font-size: 14px; margin-bottom: 15px; line-height: 20px;
+}
+.carouselNewList li figcaption dl dd:first-of-type {
+  margin-bottom: 15px;
+}
+.bx-controls-direction a.bx-prev{
+    left:20px;
+}
+.bx-controls-direction a.bx-next{
+    right:20px; 
+}
+section.detailWrap .detailitem .bx-wrapper {
+  float: left; width: 48%; margin-left: 4%; margin-bottom: 50px;
+  height: 325px; box-sizing: border-box; overflow: hidden;
+}
+section.detailWrap .detailitem .bx-wrapper .bx-viewport {
+  height: 325px; overflow: hidden;
+}
+section.detailWrap .detailitem .bx-wrapper .detailImage {
+  height: 325px; padding: 0; margin: 0;
+}
+section.detailWrap .detailitem .bx-wrapper .detailImage li {
+  height: 325px;
+}
+section.detailWrap .detailitem .bx-wrapper .detailImage li img {
+  height: 100%; max-height: 100%; width: 100%; object-fit: contain;
+  display: block;
+}
+/* detail image pager*/
+section.detailWrap .detailitem >div:last-child .customPager {
+    position: absolute; top:0; right:0; width:48%; box-sizing: border-box;
+}
+section.detailWrap .detailitem >div:last-child .customPager li {
+    width: 33%; display: inline-block; 
+}
+section.detailWrap .detailitem > div:last-child .customPager li:not(:nth-child(1)):not(:nth-child(4)):not(:nth-child(6)) {
+  margin-left: 0.3%;
+}
+section.detailWrap .detailitem > div:last-child .customPager li:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)) {
+  margin-top: 10px;
+}
+.suggestionList li figure a{
+    margin-bottom: 50px;
+}
+.suggestionList li figure figcaption dl dd:first-of-type{
+    font-size: 18px; line-height: 21px; margin-bottom: 15px;
+}
+section.detailWrap > div:nth-child(6) .bx-wrapper .bx-controls-direction .bx-prev,
+section.detailWrap > div:nth-child(6) .bx-wrapper .bx-controls-direction .bx-next{
+    display:block;
+}
+}
+@media  screen and (min-width:768px) {
+.slide1 img,
+.slide2 img,
+.slide3 img,
+.slide4 img {
+    background-size: contain;
+}
+.slide1 { 
+  background: url('../images/ban_00.png') center/contain no-repeat;
+}
+.slide2 { 
+  background: url('../images/ban_01.png') center/contain no-repeat;
+}
+.slide3 { 
+  background: url('../images/ban_02.png') center/contain no-repeat;
+}
+.slide4 { 
+  background: url('../images/ban_03.png') center/contain no-repeat;
+}
+.bx-default-pager a {
+    width: 15px; height: 15px; 
+}
+}
+@media screen and (min-width:1280px){
+
+/*mainSlider*/
+.slide1 {
+    position: relative; width: 100%;
+}
+.slide1 >div{
+    top:26.28%; left:4.68%;
+}
+.slide1 >div >div:first-of-type p:first-of-type{
+    font-size: 30px; margin-bottom: 2.5%;
+}
+.slide1 >div >div:first-of-type p:last-of-type{
+    font-size: 25px; margin-bottom: 8.7%;
+}
+.slide1 >div >div:last-of-type{
+    width: 348px; padding:35px 0 35px 30px; 
+}
+.slide1 >div >div:last-of-type b{
+    font-size: 20px; margin-bottom: 1.8%;
+}
+.slide1 >div >div:last-of-type p{
+    font-size: 15px;  margin-bottom: 2.5%;
+}
+.slide1 >div >div:last-of-type a{
+    line-height: 40px; max-width: 153px; font-size: 14px;
+}
+.slide2 div {
+    width: 348px; padding: 30px 0 30px 30px; left: 4.68%; top: 26.28%;
+}
+.slide2 div b {
+    font-size: 20px; margin-bottom: 20px;
+}
+.slide2 div p {
+    font-size: 15px; margin-bottom: 20px;
+}
+.slide2 div a {
+    line-height: 40px; max-width: 153px;
+}
+.slide3 div {
+    max-width: 468px; left: 4.68%; top: 26.28%;
+}
+.slide3 div p:first-of-type {
+    font-size: 30px;  margin-bottom: 20px;
+}
+.slide3 div p:last-of-type {
+    font-size: 25px;
+}
+.slide4 a {
+    bottom: 4.68%; line-height: 40px; width: 153px;
+}
+.bx-default-pager {
+    right: 3.12%; bottom: 3.12%; 
+}
+.bx-default-pager .bx-pager-item {
+    margin-left: 6px;
+}
+
+/*newitem carousel*/
+.carouselWrap .bx-wrapper {
+  max-width: 1820px; 
+}
+.carouselWrap h3{
+    font-size: 18px;
+}
+.carouselNewList > li {
+  width: 420px;
+}
+.carouselNewList li figcaption dl dt {
+  font-size: 18px; margin-bottom: 10px; line-height: 24px;
+}
+.carouselNewList li figcaption dl dd:first-of-type {
+  margin-bottom: 15px;
+}
+.carouselNewList li figcaption dl dd:last-of-type {
+  margin-bottom: 10px;
+}
+.bx-controls-direction a.bx-prev{
+    left:10px; 
+}
+.bx-controls-direction a.bx-next{
+    right:10px; 
+}
+
+section.detailWrap .detailitem .bx-wrapper{
+    margin-left: 5%; width:33%;
+}
+section.detailWrap .detailitem .bx-wrapper .bx-viewport{
+    max-height:600px;
+}
+section.detailWrap .detailitem .bx-wrapper .bx-viewport .detailImage li img{
+    width:100%;
+}
+
+/* detail image pager*/
+section.detailWrap .detailitem >div:last-child .customPager {
+    display: flex; flex-wrap: wrap; gap: 10px 2%; justify-content: flex-start; width: 100%; padding: 0; margin: 0;
+}
+section.detailWrap .detailitem >div:last-child .customPager li {
+    width: 23.5%; padding: 0; 
+}
+.suggestionList li figure a{
+    margin-bottom: 50px;
+}
+.suggestionList li figure figcaption dl dd:first-of-type{
+    font-size: 18px; line-height: 21px; margin-bottom: 20px;
+}
+section.detailWrap > div:nth-child(6) .bx-wrapper .bx-controls-direction .bx-prev,
+section.detailWrap > div:nth-child(6) .bx-wrapper .bx-controls-direction .bx-next{
+    display:none;
+}
+
+
+
+
+}

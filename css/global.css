@@ -1,0 +1,1445 @@
+body{
+   cursor: default;
+}
+body, input, textarea, select, button{
+    font-family: 'Avenir LT Pro';
+ }
+a{
+    text-decoration: none;
+ }
+ul,ol{
+    list-style: none;
+ }
+[class$='Popup']{
+   display: none;
+}
+[class$='Popup'].active{
+   display: block;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; appearance: none; display: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus {
+  outline: none;
+  border: none;
+}
+select{
+   appearance: none; -webkit-appearance: none; -moz-appearance: none;
+}
+input[type='checkbox']{
+   appearance: none; -webkit-appearance: none; -moz-appearance: none;
+   box-sizing: border-box; cursor: pointer;
+}
+
+.mainPopup div:last-of-type p,
+.mainPopup div:last-of-type b,
+section.listpagewrap div.listindicator nav ul li,
+section.listpagewrap > div:nth-of-type(2) h2,
+section.listpagewrap .paging ol li a,
+section.detailWrap .detailitem >div:last-child .count-box button,
+section.detailWrap > div:nth-child(3) h3,
+section.detailWrap > div:nth-child(3) span a,
+section.detailWrap .reviewsPopup ul li:first-child label:first-of-type,
+section.detailWrap .reviewsPopup ul li:not(:first-child) label,
+section.detailWrap > div:nth-child(7) .customerReviews >div div:first-child span:last-of-type,
+section.detailWrap > div:nth-child(7) .customerReviews >div div:first-child p,
+section.detailWrap > div:nth-child(7) .customerReviews >div .reviewsbox b,
+section.detailWrap > div:nth-child(7) .customerReviews >div .reviewsbox .help p,
+section.detailWrap > div:nth-child(7) .customerReviews >div .reviewsbox .help span,
+.loginWrap >div h2,
+.myaccount >.account-wrap > .account-summary >div:first-of-type span:first-of-type,
+.order-wrap .order-box .order-select select,
+.order-wrap .order-box .order-select input[type='date'],
+.order-wrap .order-box .order-select span,
+.order-wrap .order-box .order-select input[type='button'],
+.order-wrap .order-box .order-list .order-row div p,
+.order-wrap .order-box .order-list .order-item p,
+.order-wrap .order-box .order-list .order-item div:first-child input,
+.order-wrap .order-box .order-list .order-item div:nth-child(5) input[type='button'],.order-wrap .order-paging ol li a,
+.order-wrap .orderPopup h3,
+.order-wrap .orderPopup .receiver-box p,
+.order-wrap .orderPopup .receiver-box span,
+.order-wrap .orderPopup > div:last-of-type ul li > div b,
+.order-wrap .orderPopup > div:last-of-type ul li p:first-of-type,
+.address-wrap .address-box .address-list div:last-child input[type='button'][value='Register delivery address'],
+.review-wrap .review-box .review-list > p,
+.review-wrap .review-box .review-list .review-row div p,
+.review-wrap .review-box .review-list .review-item div p,
+.review-wrap .review-paging ol li a,
+.addresschgWrap >div:first-child input[type='reset'],
+.contactWrap .backBtn-wrap button,
+.contactWrap >div:last-child form input[type='text'],
+.contactWrap >div:last-child form input[type='email'],
+.contactWrap >div:last-child form div select,
+.cart-wrap > .cart-box .cart-summary div:last-child strong,
+.payment-wrap > .getItem-wrap > .total span strong,
+.payment-wrap > .payment-box .paymodule .deliverymodule b,
+.payment-wrap > .payment-box .paymodule .paybox b,
+.footer-wrap .backBtn-wrap button,
+.footer-wrap .wholesale-box h2,
+.footer-wrap .wholesale-box ul li p,
+.footer-wrap .about-box ul li:first-child div b,
+.footer-wrap .about-box ul li:nth-child(3) div b,
+.footer-wrap .about-box ul li:last-child  div b,
+.footer-wrap .about-box ul li:last-child  div q,
+.footer-wrap .about-box ul li:last-child  div p:last-of-type,
+.footer-wrap .about-box ul li:nth-child(2) b,
+.footer-wrap .about-box ul li:nth-child(4) b,
+.footer-wrap .about-box ul li:nth-child(4) div p:last-of-type,
+.footer-wrap .faqs-box h2,
+.footer-wrap .faqs-box ul li p,
+.footer-wrap .returns-box h2,
+.footer-wrap .returns-box ul li p,
+.footer-wrap .shopping-box h2,
+.footer-wrap .shopping-box ul li q,
+.footer-wrap .shopping-box ul li p,
+.footer-wrap .termsofService-box h2,
+.footer-wrap .termsofService-box ul li p,
+.footer-wrap .mobileService-box h2,
+.footer-wrap .mobileService-box p,
+ .address-wrap .address-box .address-list .notaddress{
+   color:#000;
+}
+
+header .searchPopup div:last-child p,
+header .searchPopup div:last-child div figure figcaption dl dt,
+header .searchPopup div:last-child div figure figcaption dl dd:last-of-type,
+header .globalHeader nav ul > li b,
+header .globalHeader nav ul > li:nth-of-type(7) ol li a,
+header .globalHeader nav ul > li:nth-of-type(8) ol li a,
+header .globalUserpage span a:first-of-type .cart-count,
+.carouselWrap h3,
+.carouselNewList li figcaption dl dt,
+.carouselNewList li figcaption dl dd:last-of-type,
+section > div:first-of-type div h3,
+section > div:nth-of-type(2) h3,
+section > div:nth-of-type(2) div div p,
+section > div:nth-of-type(3) h3,
+section >div.videoBox div p,
+footer >div.globalFooter div:not(:first-of-type) h2,
+footer >div.globalFooter div ul[class$='menu'] li a,
+footer >div.globalFooter div:nth-of-type(4) p,
+section >div.videoBox div a,
+section.listpagewrap > div:nth-of-type(2) .listwrap ul li figure figcaption dl dt,
+section.listpagewrap > div:nth-of-type(2) .listwrap ul li figure figcaption dl dd:last-of-type,
+section.detailWrap .detailitem >div:first-child strong,
+section.detailWrap .detailitem >div:first-child p,
+section.detailWrap .detailitem >div:last-child span,
+section.detailWrap .detailitem >div:last-child span strong,
+section.detailWrap .detailitem >div:last-child .count-box input[type='number'],
+section.detailWrap .detailitem >div:last-child input[type='button'],
+section.detailWrap .detailitem >div:last-child .paymentgoto,
+section.detailWrap > div:nth-child(4) div p:first-of-type,
+section.detailWrap > div:nth-child(5) div p:first-of-type,
+section.detailWrap > div:nth-child(6) h3,
+.suggestionList li figure figcaption dl dd:first-of-type,
+.suggestionList li figure figcaption dl dd:last-of-type,
+section.detailWrap > div:nth-child(7) h3,
+section.detailWrap > div:nth-child(7) p,
+section.detailWrap > div:nth-child(7) input[type='button'][value="WRITE A REVIEW"],
+section.detailWrap > div:nth-child(7) .reviewsPopup p:first-child,
+section.detailWrap .detailitem >div:last-child .color-box span,
+section.detailWrap > div:nth-child(7) div:nth-of-type(2) span,
+section.detailWrap > div:nth-child(7) .customerReviews >div .reviewsbox p:first-of-type,
+section.detailWrap .detailitem >div:last-child .size-box span,
+section.detailWrap .detailitem >div:last-child .size-box button,
+section.detailWrap .detailitem >div:last-child .check-box span,
+section.detailWrap .detailitem >div:last-child .check-box button,
+.loginWrap >div form label,
+.loginWrap >div a,
+.loginWrap .joinSubmit,
+.loginWrap .reset-box p,
+.myaccount >.account-wrap h2,
+.myaccount >.account-wrap > .account-summary >div:last-of-type div:not(:last-of-type) b,
+.myaccount >.account-wrap > .account-summary >div:last-of-type div:last-of-type span,
+.myaccount >.account-wrap > .account-menu a figure figcaption dl dt,
+.order-wrap .order-box h2,
+.order-wrap .order-box >.botton-wrap .tabMenu li button,
+.order-wrap .order-box .order-list > p,
+.order-wrap .order-box #tab3 .order-item p,
+.order-wrap .orderPopup .receiver-box span small,
+.address-wrap .address-box h2,.address-wrap .address-box .address-list .address-row div p,
+.address-wrap .address-box .address-list .address-item div p,
+.address-wrap .address-box .address-list .address-item div input[type='button'],
+.address-wrap .address-box >div:last-child div b,
+.review-wrap .review-box h2,
+.review-wrap .review-box .review-list .review-item div:nth-child(3) p,
+.review-wrap .review-box .review-list .review-item div:nth-child(4) input,
+.profileWrap .profilebox h2,
+.profileWrap .profilebox form label,
+.profileWrap .profilebox form div p,
+.profileWrap .profilebox input[type='button'],
+.addresschgWrap >div:first-child h2,
+.addresschgWrap >div:first-child form label,
+.userpwWrap .reset-box h2,
+.userWrap >div h2,
+.userWrap >div form label,
+.userWrap .reset-box input[type='button'],
+.contactWrap >div:last-child h2,
+.contactWrap >div:last-child form label,
+.mycart-wrap div h2,
+.mycart-wrap div p,
+.cart-wrap >.cart-box h2,
+.cart-wrap >.cart-box .cartindicator span b,
+.cart-wrap >.cart-box .cart-item div:nth-child(2) b,
+.cart-wrap >.cart-box .cart-item div:nth-child(2) p,
+.cart-wrap >.cart-box .cart-item div:nth-child(3) p,
+.cart-wrap >.cart-box .cart-item div:nth-child(4) .count-box input[type='number'],
+.cart-wrap >.cart-box .cart-item div:nth-child(4) .count-box button,
+.cart-wrap >.cart-box .cart-item div:nth-child(4) input[type='button'],
+.cart-wrap >.cart-box .cart-item div:last-child strong,
+.cart-wrap > .cart-box .cart-summary div:first-child form label,
+.cart-wrap > .cart-box .cart-summary div:last-child p:first-of-type,
+.cart-wrap > .cart-box .cart-summary div:last-child p:last-of-type,
+.cart-wrap > .cart-box .cart-summary div:last-child form input[type='button']:first-of-type,
+.payment-wrap .shoppayPopup div:first-of-type span,
+.payment-wrap .shoppayPopup > p:first-of-type,
+.payment-wrap .shoppayPopup > span p,
+.payment-wrap .shoppayPopup > p:last-of-type,
+.payment-wrap .shoppayPopup div:last-child p,
+.payment-wrap > .getItem-wrap .getlist div:first-of-type p,
+.payment-wrap > .getItem-wrap .getlist div:last-of-type p,
+.payment-wrap > .getItem-wrap > .total span b,
+.payment-wrap > .payment-box .paymodule h3,
+.payment-wrap > .payment-box .paymodule .deliverymodule  form ul li:not(:first-of-type) label,
+.payment-wrap > .payment-box .paymodule .paybox form ul li label,
+.payment-wrap > .payment-box .paymodule .deliverymodule  form ul li:first-of-type label,
+.paybox >p:first-of-type,
+.paybox form ul > li:first-child label,
+.paybox form ul > li:nth-child(3) label,
+.paybox form ul > li:nth-child(4) label,
+.paybox form ul > li:first-child ol li:nth-child(3) label,
+.paybox form ul > li:nth-child(3) ol li p,
+.paybox form ul > li:nth-child(4) p,
+.paycomplete-wrap div h2,
+.paycomplete-wrap div p,
+.payment-wrap > .payment-box .paymodule h3,
+section.detailWrap .detailitem >div:first-child .toogle-btn,
+.slide1 >div,
+.slide3 div,
+.slide2 div{
+   color:#212121;
+}
+
+.mainPopup div:last-of-type input[type='email']::placeholder,
+header .searchPopup div:first-child input[type='search']::placeholder,
+.payment-wrap > .payment-box .paymodule .deliverymodule  form ul li input::placeholder,
+.paybox form ul > li:first-child ol li:first-child input::placeholder,
+.paybox form ul > li:first-child ol li:nth-child(2) input::placeholder{
+   color:#a6a6a6;
+}
+
+header .searchPopup div:last-child div figure figcaption dl dd:first-of-type,
+.carouselNewList li figure figcaption dl dd:first-of-type,
+section.listpagewrap > div:nth-of-type(2) .listwrap ul li figure figcaption dl dd:first-of-type,
+section.detailWrap .detailitem >div:first-child span,
+section.detailWrap > div:nth-child(4) div p:last-of-type,
+section.detailWrap > div:nth-child(5) div p:last-of-type,
+.suggestionList li figure figcaption dl dt,
+section.detailWrap > div:nth-child(7) .reviewsPopup li:nth-child(2) textarea::placeholder,
+section.detailWrap > div:nth-child(7) .reviewsPopup li:nth-child(3) input::placeholder,
+section.detailWrap > div:nth-child(7) .reviewsPopup li:nth-child(5) p,
+ .footer-wrap .about-box ul li:nth-child(2) p,
+ .paybox form ul > li:first-child ol li input::placeholder{
+   color:#555;
+}
+
+section.detailWrap .detailitem >div:last-child div:first-of-type p,
+.myaccount >.account-wrap > .account-summary >div:last-of-type div:not(:last-of-type) p,
+.order-wrap .order-box .order-select div p,
+.order-wrap .order-box .order-list .order-item div:nth-child(2) span p:last-of-type,
+.order-wrap .orderPopup > div:last-of-type ul li > div p:first-of-type,
+.address-wrap .address-box >div:last-child ul li p,
+.review-wrap .review-box .review-list .review-item div:nth-child(2) span p:last-of-type,
+.profileWrap .profilebox form input[type='email']::placeholder,
+ .payment-wrap > .payment-box .paymodule .deliverymodule  form ul li:not(:first-child) input,
+.payment-wrap > .payment-box .paymodule .deliverymodule .addressPopup .user-info small,
+.payment-wrap > .payment-box .paymodule .deliverymodule .addressPopup .user-address,
+.paybox form ul > li:first-child ol li:first-of-type input,
+.paybox form ul > li:first-child ol li:nth-child(3) select,
+.footer-wrap .about-box ul li:first-child div p,
+.footer-wrap .about-box ul li:nth-child(3) div p,
+.footer-wrap .about-box ul li:last-child  div p:first-of-type,
+.footer-wrap .about-box ul li:nth-child(4) div p:first-of-type,
+.footer-wrap .faqs-box ul li b,
+.footer-wrap .returns-box ul li b,
+.footer-wrap .shopping-box ul li b,
+.footer-wrap .termsofService-box ul li b,
+.footer-wrap .mobileService-box b {
+   color:#333;
+}
+.contactWrap >div:last-child form input#urPhone::placeholder,
+.contactWrap >div:last-child form textarea::placeholder{
+   color:#e0e0e0;
+}
+
+section > div:first-of-type div p,
+.myaccount >.account-wrap > .account-summary >div:first-of-type span{
+   color:#777;
+}
+.mainPopup div:last-of-type input[type='submit'],
+header .maincomment li p,
+section > div:nth-of-type(3) div div a,
+section.listpagewrap > div:nth-of-type(2) .listwrap ul li span button,
+section.listpagewrap > div:nth-of-type(2) .listwrap ul li input[type='button'],
+section.detailWrap .detailitem >div:last-child .shoppayment,
+section.detailWrap .reviewsPopup li:last-child input[type='submit'],
+.loginWrap .login,
+.loginWrap .reset-box input[type='submit'][value='SUBMIT'],
+.loginWrap .reset-box input[type='submit'][value='RESET PASSWORD'],
+.address-wrap .address-box .address-list div:last-child input[type='button'][value='Delete'],
+section.review-wrap .reviewsPopup li:last-child input[type='submit'],
+.profileWrap .profilebox input[type='submit'],
+.addresschgWrap >div:first-child input[type='submit'],
+.userWrap .reset-box input[type='submit'],
+.contactWrap >div:last-child form div .custom-file-btn,
+.contactWrap >div:last-child form input[type='submit'],
+.cart-wrap > .cart-box .cart-summary div:last-child form input[type='button']:last-of-type,
+.cart-wrap > .cart-box .cart-summary div:last-child form button,
+.payment-wrap > .payment-box .paymodule button,
+.payment-wrap > .payment-box .paymodule .deliverymodule .addressPopup div:first-child b,
+.payment-wrap > .payment-box .paymodule .deliverymodule .addressPopup div:last-child ul li input[type='button'],
+.paybox form ul > li:nth-child(5) input,
+.paycomplete-wrap div input,
+.slide1 >div >div:last-of-type a,
+.slide2 div a,
+.slide4 a,
+footer > div.globalFooter div:nth-of-type(4) button[type='submit'],
+section.detailWrap > div:nth-child(7) input[type='button'][value="WRITE A REVIEW"]:hover{
+   color:#fff;
+}
+.order-wrap .orderPopup > div:last-of-type ul li p:last-of-type{
+   color:#3007eb;
+}
+.order-wrap .order-box .order-list .order-item div:nth-child(5) p,
+.addresschgWrap >div:first-child form div span,
+.mycart-wrap div a,
+.payment-wrap > .payment-box .paymodule .deliverymodule .addressPopup div:last-child ul li label,
+.footer-wrap .termsofService-box ul li a{
+   color:#411ceb;
+}
+.myaccount >.account-wrap > .account-summary >div:first-of-type span mark{
+   color:#5433eb;
+}
+
+footer > div.globalFooter div:nth-of-type(4) span.message-error{
+   color:#ff0000;
+}
+section.listpagewrap > div:nth-of-type(2) .listwrap ul li figure figcaption dl dd:last-of-type del,
+section.detailWrap .detailitem >div:last-child span del,
+.login-error,
+.loginWrap .Information,
+.loginWrap .reset-box .change-true,
+.loginWrap .reset-box .change-error,
+.order-wrap .order-box .order-list .order-item div:last-child .cancellation,
+.order-wrap .order-box .order-list .order-item div:last-child .exchange,
+.order-wrap .order-box .order-list .order-item div:last-child .return,
+.userWrap >div .Information,
+.userWrap >div .change-true,
+.userWrap >div .change-error,
+.paybox form ul > li:first-child ol li:nth-child(3) p{
+   color:#a60000;
+}
+
+.mainPopup div:last-of-type p:first-of-type,
+.mainPopup div:last-of-type p:last-of-type,
+.mainPopup div:last-of-type input[type='email']::placeholder,
+header .searchPopup div:last-child div figure figcaption dl dd:first-of-type,
+header .globalUserpage span a:first-of-type .cart-count,
+.slide1 >div >div:first-of-type p:last-of-type,
+.slide1 >div >div:last-of-type p,
+.slide1 >div >div:last-of-type a,
+.slide2 div p,
+.slide2 div a,
+.slide3 div p:last-of-type,
+.slide4 a, 
+section > div.listindicator nav ul li,
+.carouselWrap h3,
+.carouselNewList li figcaption dl dd:first-of-type,
+section > div:first-of-type div p,
+section > div:nth-of-type(3) h3,
+section > div:nth-of-type(3) div div a,
+footer > div.globalFooter div:nth-of-type(4) span.message-error,
+footer > div.globalFooter div:nth-of-type(4) span.message-completion,
+section.listpagewrap div.listindicator nav ul li,
+section.listpagewrap > div:nth-of-type(2) h2,
+section.listpagewrap > div:nth-of-type(2) .listwrap ul li figure figcaption dl dd:first-of-type,
+section.listpagewrap > div:nth-of-type(2) .listwrap ul li span button,
+section.listpagewrap > div:nth-of-type(2) .listwrap ul li input[type='button'],
+section.detailWrap .detailitem >div:last-child div:first-of-type p,
+section.detailWrap .detailitem >div:last-child .paymentgoto,
+section.detailWrap > div:nth-child(3) h3,
+section.detailWrap > div.shere-box h3,
+section.detailWrap > div:nth-child(7) .reviewsPopup ul li:first-child label:first-of-type,
+section.detailWrap > div:nth-child(7) .reviewsPopup ul li:not(:first-child) label,
+section.detailWrap > div:nth-child(7) .reviewsPopup li:nth-child(5) p,
+section.detailWrap .detailitem >div:last-child .color-box span,
+section.detailWrap .detailitem >div:last-child .size-box span,
+section.detailWrap .detailitem >div:last-child .size-box button,
+section.detailWrap .detailitem >div:last-child .check-box span,
+section.detailWrap .detailitem >div:last-child .check-box button,
+.login-error,
+.loginWrap .Information,
+.loginWrap .reset-box .change-true,
+.loginWrap .reset-box .change-error,
+.myaccount >.account-wrap > .account-summary >div:last-of-type div:not(:last-of-type) p,
+.order-wrap .order-box >.botton-wrap .tabMenu li button,
+.order-wrap .order-box .order-select select,
+.order-wrap .order-box .order-select input[type='date'],
+.order-wrap .order-box .order-select span,
+.order-wrap .order-box .order-select input[type='button'],
+.order-wrap .order-box .order-list .order-row div p,
+.order-wrap .orderPopup > div:last-of-type ul li > div p:first-of-type,
+.address-wrap .address-box .address-list .address-item div p,
+.address-wrap .address-box .address-list .address-item div input[type='button'],
+.address-wrap .address-box .address-list div:last-child input[type='button'][value='Delete'],
+.address-wrap .address-box .address-list div:last-child input[type='button'][value='Register delivery address'],
+.address-wrap .address-box >div:last-child ul li p,
+.review-wrap .review-box .review-list .review-row div p,
+.review-wrap .review-box .review-list .review-item div:nth-child(3) p,
+.review-wrap .review-box .review-list .review-item div:nth-child(4) input,
+.profileWrap .profilebox form div p,
+.addresschgWrap >div:first-child form div span,
+.userWrap >div .Information,
+.userWrap >div .change-true,
+.userWrap >div .change-error,
+.contactWrap >div:last-child form div select,
+.cart-wrap > .cart-box .cart-summary div:last-child p:first-of-type,
+.cart-wrap > .cart-box .cart-summary div:last-child strong,
+.cart-wrap > .cart-box .cart-summary div:last-child form input[type='button']:last-of-type,
+.payment-wrap .shoppayPopup div:first-of-type span,
+.payment-wrap .shoppayPopup > p:first-of-type,
+.payment-wrap .shoppayPopup > span p,
+.payment-wrap .shoppayPopup > p:last-of-type,
+.payment-wrap .shoppayPopup div:last-child p,
+.payment-wrap > .getItem-wrap .getlist div:first-of-type p,
+.payment-wrap > .getItem-wrap .getlist div:last-of-type p,
+.payment-wrap > .payment-box .paymodule .deliverymodule .addressPopup .user-info small,
+.payment-wrap > .payment-box .paymodule .deliverymodule .addressPopup .user-address,
+.paybox form ul > li:first-child ol li:nth-child(3) p,
+.footer-wrap .wholesale-box h2,
+.footer-wrap .about-box ul li:first-child div b,
+.footer-wrap .about-box ul li:nth-child(3) div b,
+.footer-wrap .about-box ul li:last-child  div b,
+.footer-wrap .about-box ul li:nth-child(4) b,
+.footer-wrap .faqs-box h2,
+.footer-wrap .returns-box h2,
+.footer-wrap .shopping-box h2,
+.footer-wrap .termsofService-box h2,
+.footer-wrap .mobileService-box h2,
+ .address-wrap .address-box .address-list .notaddress,
+ .payment-wrap > .payment-box .paymodule h3 {
+   font-weight: 300;
+}
+
+header .searchPopup div:first-of-type input[type='search']::placeholder,
+header .searchPopup div:last-child p,
+header .searchPopup div:last-child div figure figcaption dl dt,
+header .searchPopup div:last-child div figure figcaption dl dd:last-of-type,
+header .globalHeader nav ul > li b,
+header .globalHeader nav ul > li:nth-of-type(7) ol li a,
+header .globalHeader nav ul > li:nth-of-type(8) ol li a,
+footer >div.globalFooter div:not(:first-of-type) h2,
+footer >div.globalFooter div ul[class$='menu'] li a,
+footer >div.globalFooter div:nth-of-type(4) p,
+footer >div.globalFooter div:nth-of-type(4) input[type='email'],
+footer > div.globalFooter div:nth-of-type(4) button[type='submit'],
+.slide1 >div >div:first-of-type p:first-of-type,
+.slide1 >div >div:last-of-type b,
+.slide2 div b,
+.slide3 div p:first-of-type,
+.carouselNewList li figcaption dl dt,
+.carouselNewList li figcaption dl dd:last-of-type,
+section > div:first-of-type div h3,
+section > div:nth-of-type(2) h3,
+section > div:nth-of-type(2) div div p,
+section.listpagewrap > div:nth-of-type(2) .listwrap ul li figure figcaption dl dt,
+section.listpagewrap > div:nth-of-type(2) .listwrap ul li figure figcaption dl dd:last-of-type,
+section.listpagewrap .paging ol li a,
+section.listpagewrap > div:nth-of-type(2) .listwrap ul li figure figcaption dl dd:last-of-type del,
+section.detailWrap .detailitem >div:first-child strong,
+section.detailWrap .detailitem >div:first-child span,
+section.detailWrap .detailitem >div:first-child p,
+section.detailWrap .detailitem >div:last-child span,
+section.detailWrap .detailitem >div:last-child span strong,
+section.detailWrap .detailitem >div:last-child input[type='button'],
+section.detailWrap .detailitem >div:last-child .shoppayment,
+section.detailWrap > div:nth-child(3) span a,
+section.detailWrap > div.shere-box span a,
+section.detailWrap > div:nth-child(4) div p:first-of-type,
+section.detailWrap > div:nth-child(5) div p:first-of-type,
+section.detailWrap > div:nth-child(4) div p:last-of-type,
+section.detailWrap > div:nth-child(5) div p:last-of-type,
+section.detailWrap > div:nth-child(6) h3,
+.suggestionList li figure figcaption dl dt,
+.suggestionList li figure figcaption dl dd:first-of-type,
+section.detailWrap > div:nth-child(7) h3,
+section.detailWrap > div:nth-child(7) p,
+section.detailWrap > div:nth-child(7) input[type='button'][value="WRITE A REVIEW"],
+section.detailWrap > div:nth-child(7) .reviewsPopup p:first-child,
+section.detailWrap > div:nth-child(7) .reviewsPopup li:last-child input[type='submit'],
+section.detailWrap > div:nth-child(7) div:nth-of-type(2) span,
+section.detailWrap > div:nth-child(7) .customerReviews >div div:first-child span:last-of-type,
+section.detailWrap > div:nth-child(7) .customerReviews >div .reviewsbox p:first-of-type,
+section.detailWrap > div:nth-child(7) .customerReviews >div .reviewsbox .help p,
+section.detailWrap > div:nth-child(7) .customerReviews >div .reviewsbox .help span,
+.loginWrap >div h2,
+.loginWrap >div form label,
+.loginWrap >div a,
+.loginWrap .login,
+.loginWrap >div form input,
+.loginWrap .reset-box p,
+.myaccount >.account-wrap h2,
+.myaccount >.account-wrap > .account-summary >div:first-of-type span,
+.myaccount >.account-wrap > .account-summary >div:first-of-type span mark,
+.myaccount >.account-wrap > .account-summary >div:last-of-type div:last-of-type span,
+.myaccount >.account-wrap > .account-summary >div:last-of-type div:last-of-type span b,
+.myaccount >.account-wrap > .account-menu a figure figcaption dl dt,
+.order-wrap .order-box h2,
+.order-wrap .order-box .order-select div p,
+.order-wrap .order-box #tab3 .order-item p,
+.order-wrap .order-paging ol li a,
+.order-wrap .orderPopup .receiver-box span small,
+.order-wrap .orderPopup h3,
+.profileWrap .profilebox form input[type='email'], .profileWrap .profilebox form input[type='text'],
+.address-wrap .address-box h2,
+.address-wrap .address-box .address-list .address-row div p,
+.addresschgWrap >div:first-child input[type='reset'],
+.addresschgWrap >div:first-child input[type='submit'],
+.review-wrap .review-box h2,
+.review-wrap .review-paging ol li a,
+section.review-wrap .reviewsPopup li:last-child input[type='submit'],
+.profileWrap .profilebox h2,
+.profileWrap .profilebox form label,
+.profileWrap .profilebox form input[type='email']::placeholder,
+.profileWrap .profilebox input[type='button'],
+.profileWrap .profilebox input[type='submit'],
+.addresschgWrap >div:first-child h2,
+.addresschgWrap >div:first-child form label,
+.addresschgWrap >div:first-child form input:not([type="reset"]):not([type="submit"]),
+.userWrap >div h2,
+.userWrap >div form label,
+.userWrap >div form input[type='password'],
+.userWrap >div form input[type='text'],
+.userWrap .reset-box input[type='button'],
+.userWrap .reset-box input[type='submit'],
+.contactWrap .backBtn-wrap button,
+.contactWrap >div:last-child h2,
+.contactWrap >div:last-child form label,
+.contactWrap >div:last-child form input[type='text'],
+.contactWrap >div:last-child form input[type='email'],
+.contactWrap >div:last-child form input#urPhone::placeholder,
+.contactWrap >div:last-child form div .custom-file-btn,
+.contactWrap >div:last-child form textarea,
+.contactWrap >div:last-child form textarea::placeholder,
+.contactWrap >div:last-child form input[type='submit'],
+.mycart-wrap div h2,
+.mycart-wrap div p,
+.mycart-wrap div a,
+.cart-wrap >.cart-box h2,
+.cart-wrap >.cart-box .cartindicator span b,
+.cart-wrap >.cart-box .cart-item div:nth-child(2) b,
+.cart-wrap >.cart-box .cart-item div:nth-child(2) p,
+.cart-wrap >.cart-box .cart-item div:nth-child(3) p,
+.cart-wrap >.cart-box .cart-item div:nth-child(4) input[type='button'],
+.cart-wrap >.cart-box .cart-item div:last-child strong,
+.cart-wrap > .cart-box .cart-summary div:first-child form label,
+.cart-wrap > .cart-box .cart-summary div:last-child p:last-of-type,
+.cart-wrap > .cart-box .cart-summary div:last-child form input[type='button']:first-of-type,
+.cart-wrap > .cart-box .cart-summary div:last-child form button,
+.payment-wrap > .getItem-wrap > .total span b,
+.payment-wrap > .getItem-wrap > .total span strong,
+.payment-wrap > .payment-box .paymodule h3,
+.payment-wrap > .payment-box .paymodule button,
+.payment-wrap > .payment-box .paymodule .deliverymodule  form ul li:not(:first-of-type) label,
+.payment-wrap > .payment-box .paymodule .paybox form ul li label,
+.payment-wrap > .payment-box .paymodule .deliverymodule  form ul li:first-of-type label,
+.payment-wrap > .payment-box .paymodule .deliverymodule  form ul li:not(:first-child) input,
+.payment-wrap > .payment-box .paymodule .deliverymodule  form ul li input::placeholder,
+.payment-wrap > .payment-box .paymodule .deliverymodule .addressPopup div:last-child ul li input[type='button'],
+.paybox >p:first-of-type,
+.paybox form ul > li:first-child label,
+.paybox form ul > li:nth-child(3) label,
+.paybox form ul > li:nth-child(4) label,
+.paybox form ul > li:first-child ol li:first-of-type input,
+.paybox form ul > li:first-child ol li:nth-of-type(2) input,
+.paybox form ul > li:first-child ol li:first-of-type input::placeholder,
+.paybox form ul > li:first-child ol li:nth-child(3) label,
+.paybox form ul > li:first-child ol li:nth-child(3) select,
+.paybox form ul > li:nth-child(3) ol li p,
+.paybox form ul > li:nth-child(5) input,
+.paycomplete-wrap div h2,
+.paycomplete-wrap div p,
+.paycomplete-wrap div input,
+.paybox form ul > li:first-child ol li:first-child input::placeholder,
+.paybox form ul > li:first-child ol li:nth-child(2) input::placeholder,
+.footer-wrap .backBtn-wrap button,
+.footer-wrap .wholesale-box ul li p,
+.footer-wrap .about-box ul li:first-child div p,
+.footer-wrap .about-box ul li:nth-child(3) div p,
+.footer-wrap .about-box ul li:last-child  div p:first-of-type,
+.footer-wrap .about-box ul li:last-child  div q,
+.footer-wrap .about-box ul li:nth-child(2) b,
+.footer-wrap .about-box ul li:nth-child(2) p,
+.footer-wrap .about-box ul li:nth-child(4) div p:first-of-type,
+.footer-wrap .about-box ul li:nth-child(4) div p:last-of-type,
+.footer-wrap .faqs-box ul li b,
+.footer-wrap .faqs-box ul li p,
+.footer-wrap .returns-box ul li b,
+.footer-wrap .returns-box ul li p,
+.footer-wrap .shopping-box ul li b,
+.footer-wrap .shopping-box ul li q,
+.footer-wrap .shopping-box ul li p,
+.footer-wrap .termsofService-box ul li b,
+.footer-wrap .termsofService-box ul li p,
+.footer-wrap .termsofService-box ul li a,
+.footer-wrap .mobileService-box b,
+.footer-wrap .mobileService-box p,
+section.detailWrap .reviewsPopup li:nth-child(3) input,
+section.detailWrap .reviewsPopup li:nth-child(4) input,
+section.detailWrap .reviewsPopup li:nth-child(5) input,
+section.review-wrap .reviewsPopup li:nth-child(3) input,
+section.review-wrap .reviewsPopup li:nth-child(4) input,
+section.review-wrap .reviewsPopup li:nth-child(5) input,
+.cart-wrap > .cart-box .cart-summary div:first-child form textarea,
+.loginWrap .joinSubmit{
+   font-weight: 400;
+}
+
+header .maincomment li p,
+.order-wrap .order-box .order-list .order-item p,
+.order-wrap .order-box .order-list .order-item div:first-child input,
+.order-wrap .order-box .order-list .order-item div:nth-child(5) input[type='button'],
+.order-wrap .orderPopup > div:last-of-type ul li > div b,
+.order-wrap .orderPopup > div:last-of-type ul li p:first-of-type,
+.order-wrap .orderpopup > div:last-of-type ul li p:last-of-type,
+.review-wrap .review-box .review-list .review-item div p,
+.payment-wrap > .payment-box .paymodule .deliverymodule .addressPopup div:last-child ul li label,
+.paybox form ul > li:nth-child(4) p{
+   font-weight: 550;
+}
+ 
+.mainPopup div:last-of-type b{
+   font-weight: 600;
+}
+
+section >div.videoBox div p:first-of-type,
+section >div.videoBox div p:last-of-type,
+section >div.videoBox div a,
+section.detailWrap .detailitem >div:last-child .count-box input[type='number'],
+section.detailWrap .detailitem >div:last-child .count-box button,
+.suggestionList li figure figcaption dl dd:last-of-type,
+section.detailWrap > div:nth-child(7) .customerReviews >div .reviewsbox b,
+.myaccount >.account-wrap > .account-summary >div:last-of-type div:not(:last-of-type) b,
+.order-wrap .order-box .order-list > p,
+.order-wrap .orderPopup .receiver-box p,
+.order-wrap .orderPopup .receiver-box span,
+.order-wrap .orderPopup >div:last-of-type p,
+.address-wrap .address-box >div:last-child div b,
+.review-wrap .review-box .review-list > p,
+.cart-wrap >.cart-box .cart-item div:nth-child(4) .count-box input[type='number'],
+.cart-wrap >.cart-box .cart-item div:nth-child(4) .count-box button,
+.payment-wrap > .payment-box .paymodule .deliverymodule b,
+.payment-wrap > .payment-box .paymodule .paybox b,
+.payment-wrap > .payment-box .paymodule .deliverymodule .addressPopup div:first-child b{
+   font-weight: 800;
+}
+
+header{
+   position: fixed; width:100%; background-color: #fff; top:0;
+   z-index: 100;
+}
+header .searchPopup{
+   position: fixed; width:100%; z-index: 1000; background-color: #fff;
+}
+header .searchPopup div:first-of-type input[type='search']{
+   position: relative; width:100%; box-sizing: border-box; 
+   border:none; background-color: #fff;
+}
+header .searchPopup .closeBtn {
+   position: absolute; width: 20px; background-color: transparent;border: none; cursor: pointer; display: block;
+}
+header .searchPopup .closeBtn img {
+   width: 100%; display: block;
+}
+header .maincomment{
+   position: absolute; width:100%; background-color: #333333; top:0;
+}
+header .maincomment li p{
+   font-size: 12px;
+}
+header .globalHeader{
+   box-sizing: border-box; width:100%;
+}
+header:after{
+   content: ''; display: block; clear:both;
+}
+header .globalHeader h1 a{
+   display: block;
+}
+header .globalHeader h1 a img{
+   width:100%;
+}
+header .globalHeader nav ul > li:nth-of-type(7):hover > b::after,
+header .globalHeader nav ul > li:nth-of-type(8):hover > b::after{
+   transform: rotate(180deg);
+}
+header .globalUserpage span{
+   display: flex;
+}   
+header .globalUserpage span a{
+   display: block; position: relative; 
+}
+header .globalUserpage span input[type='button']{
+   width: 24px; background-repeat: no-repeat; background-color: transparent; border:none; height:auto;
+   background-size: contain; text-indent: -9999px; cursor: pointer;
+}
+header .globalUserpage span input[type='button'].btn_Search{
+   background-image: url('../images/search.svg');
+}
+header .globalUserpage span input[type='button'].logout{
+   background-image: url('../images/logout.svg'); 
+}
+header .globalUserpage span a img{
+   width:24px; height:auto;
+}
+header .globalUserpage span a:first-of-type .cart-count{
+   font-size: 14px;
+}
+footer{
+   background-color: #e0e0e0; cursor: default;
+}
+footer >div.globalFooter div:first-of-type h2{
+   max-width:130px;
+}
+footer >div.globalFooter div:first-of-type h2 a{
+   display: block;
+}
+footer >div.globalFooter div:first-of-type h2 a img{
+   width:100%;
+}
+footer >div.globalFooter div:not(:first-of-type) h2{
+   font-size: 15px;
+}
+footer >div.globalFooter div ul[class$='menu'] li a{
+   font-size: 14px;
+}
+footer >div.globalFooter div ul[class$='menu'] li:not(:last-of-type) a{
+   display: block; margin-bottom: 25px;
+}
+footer > div.globalFooter div:nth-of-type(4) input[type='email'] {
+   border: none; box-sizing: border-box; font-size: 14px; 
+}
+footer > div.globalFooter div:nth-of-type(4) button[type='submit'] {
+   box-sizing: border-box; line-height: 55px; background-color: #000;
+   font-size: 14px; border:none;
+}
+footer > div.globalFooter div:nth-of-type(4) span.message-error,
+footer > div.globalFooter div:nth-of-type(4) span.message-completion {
+   position: absolute; font-size: 12px; text-align: right; display: none;
+}
+footer > div.globalFooter div:last-of-type:after{
+   content: ''; display: block; clear:both;
+}
+footer > div.globalFooter div.globalIcons >div:first-of-type{
+   float:left; width:50%;
+}
+footer > div.globalFooter div.globalIcons >div:first-of-type span a{
+   display: inline-block; width:22px; height:22px;
+}
+footer > div.globalFooter div.globalIcons >div:first-of-type span a:first-of-type::before{
+   content: ''; display: inline-block; width: 22px; height: 22px;
+   background: url('../images/facebook.svg') no-repeat center / contain;
+}
+footer > div.globalFooter div.globalIcons >div:first-of-type span a:first-of-type:hover::before{
+   content: ''; display: inline-block; width: 22px; height: 22px;
+   background: url('../images/facebook_hover.svg') no-repeat center / contain;
+}
+footer > div.globalFooter div.globalIcons >div:first-of-type span a:last-of-type::before{
+   content: ''; display: inline-block; width: 22px; height: 22px;
+   background: url('../images/instagram.svg') no-repeat center / contain;
+}
+footer > div.globalFooter div.globalIcons >div:first-of-type span a:last-of-type:hover::before{
+   content: ''; display: inline-block; width: 22px; height: 22px;
+   background: url('../images/instagram_hover.svg') no-repeat center / contain;
+}
+footer > div.globalFooter div.globalIcons >div:first-of-type a:last-of-type{
+   margin-left: 1%;
+}
+footer > div.globalFooter div.globalIcons div:last-of-type{
+   float:right; width:50%; text-align: right;
+}
+footer > div.globalFooter div.globalIcons div:last-of-type span{
+   display: inline-block; 
+}
+footer > div.globalFooter div.globalIcons div:last-of-type span img{
+   width:100%; max-width:38px; display: inline-block; max-height:24px;
+}
+
+@media screen and (max-width:767px){
+   section > div:nth-of-type(2) h3,
+   section.detailWrap > div:nth-child(7) .customerReviews >div div:first-child p,
+   .order-wrap .order-box .order-select div p{
+      font-weight: 300;
+   }
+   section > div:first-of-type div p,
+   section >div.videoBox div a,
+   footer >div.globalFooter div ul[class$='menu'] li a,
+   footer >div.globalFooter div:nth-of-type(4) p,
+   section.detailWrap .detailitem >div:last-child div:first-of-type p,
+   .address-wrap .address-box .address-list .notaddress,
+   .payment-wrap > .getItem-wrap .getlist div:last-of-type p{
+      font-weight: 400;
+   }
+   section >div.videoBox div p:first-of-type,
+   section >div.videoBox div p:last-of-type,
+   footer >div.globalFooter div:nth-of-type(2) h2, 
+   footer >div.globalFooter div:nth-of-type(3) h2,
+   footer >div.globalFooter div:nth-of-type(4) h2,
+   section.detailWrap .detailitem >div:first-child strong,
+   section.detailWrap > div:nth-child(4) div p:first-of-type, 
+   section.detailWrap > div:nth-child(5) div p:first-of-type,
+   section.detailWrap > div:nth-child(7) .customerReviews >div .reviewsbox b,
+   .order-wrap .order-box >.botton-wrap .tabMenu li button,
+   .order-wrap .order-box .order-list .order-row div p,
+   .address-wrap .address-box .address-list .address-row div p,
+   .address-wrap .address-box .address-list .address-item div:nth-child(2) input,
+   .address-wrap .address-box .address-list .address-item div p,
+   .address-wrap .address-box .address-list .address-item div:nth-child(8) input,
+   .address-wrap .address-box >div:last-child ul li p,
+   .review-wrap .review-box .review-list .review-row div p,
+   .review-wrap .review-box .review-list .review-item div:nth-child(3) p:first-of-type,
+   .review-wrap .review-box .review-list .review-item div:nth-child(3) p:last-of-type,
+   .review-wrap .review-box .review-list .review-item div:last-child input,
+   .cart-wrap >.cart-box .cart-item div:nth-child(2) b,
+   .cart-wrap >.cart-box .cart-item div:nth-child(2) p,
+   .payment-wrap > .getItem-wrap .getlist div:first-of-type p{
+      font-weight: 550;
+   }
+   section.listpagewrap > div.listindicator nav ul li,
+   section.listpagewrap > div:nth-of-type(2) h2,
+   section.listpagewrap > div:nth-of-type(2) .listwrap ul li figure figcaption dl dt,
+   section.listpagewrap > div:nth-of-type(2) .listwrap ul li figure figcaption dl dd:first-of-type,
+   section.detailWrap .listindicator ul li,
+   section.detailWrap .detailitem >div:first-child span,
+   section.detailWrap .detailitem >div:first-child .toogle-btn {
+      font-weight: 600;
+   }
+   section.listpagewrap > div:nth-of-type(2) .listwrap ul li figure figcaption dl dd:last-of-type,
+   section.listpagewrap > div:nth-of-type(2) .listwrap ul li figure figcaption dl dd:last-of-type del,
+   .cart-wrap >.cart-box .cart-item div:last-child strong{
+      font-weight: 800;
+   } 
+
+   header .globalHeader > *:not(nav):not(.globalUserpage),
+   footer div,
+   .indexContainer section > div:first-of-type div p,
+   .indexContainer section > div:nth-of-type(2) div div,
+   .indexContainer section > div:nth-of-type(3),
+   section >div.videoBox,
+   .detailWrap >div,
+   .loginWrap >div,
+   .myaccount >.account-wrap,
+   .profileWrap .profilebox,
+   .order-wrap .order-box,
+   .order-wrap .order-paging,
+   .address-wrap .address-box,
+   .addresschgWrap >div:first-child,
+   .userWrap >div,
+   .review-wrap .review-box,
+   .review-wrap .review-paging,
+   .contactWrap .backBtn-wrap,
+   .contactWrap >div:last-child,
+   .mycart-wrap div.macart-box,
+   .cart-wrap >.cart-box,
+   .payment-wrap .payment-box,
+   .paycomplete-wrap .paycomplete-box,
+   .footer-wrap .backBtn-wrap,
+   .footer-wrap .about-box,
+   .footer-wrap .wholesale-box,
+   .footer-wrap .faqs-box,
+   .footer-wrap .returns-box,
+   .footer-wrap .shopping-box,
+   .footer-wrap .termsofService-box,
+   .footer-wrap .mobileService-box{
+      padding:0 3.5%; box-sizing: border-box;
+   }
+
+   .listpagewrap >.listindicator,
+   .listpagewrap >div,
+   .payment-wrap > .getItem-wrap .getlist,
+   .payment-wrap > .getItem-wrap > .total{
+      padding:0 7%; box-sizing: border-box;
+   }
+
+   header{
+      height:110px;
+   }
+   header .searchPopup{
+      bottom:37px;
+   }
+   header .searchPopup div:first-child{
+      padding:0 10%;
+   }
+   header .searchPopup div:first-of-type input[type='search']{
+      padding:30px 0; font-size: 14px;
+   }
+   header .searchPopup div:first-of-type input[type='search']::placeholder{
+      font-size: 14px; letter-spacing: 1.3px;
+   }
+   header .searchPopup .closeBtn {
+      right: 3.5%;
+   }
+   header .maincomment {
+      line-height: 30px; overflow: hidden; 
+   }
+   header .maincomment ul{
+      display:flex; width:400%; animation: mainCmt 8s infinite; 
+   }
+   header .maincomment li {
+      width:100%; text-align:center; white-space:nowrap;
+   }
+   @keyframes mainCmt{
+      0%,24.99%   { transform: translateX(0); }
+      25%,49.99%  { transform: translateX(-25%); }
+      50%,74.99%  { transform: translateX(-50%); }
+      75%,99.99%  { transform: translateX(-75%); }
+      100%        { transform: translateX(0); }  /* 처음으로 점프 */
+   }
+   header .globalHeader{
+    padding-top:40px; padding-bottom:20px; 
+   }
+   header .globalHeader h1 a{
+      max-width:100px; z-index: 10000;width:35%;
+   }
+   header .globalHeader button{
+      padding:0; margin: 0; background: none; border: none; outline: none;       
+   }
+   header .globalHeader .material-symbols-outlined{
+      width:25px; font-size: 25px; position: absolute; left:3.5%; top: 45px; 
+   }
+   header .globalHeader nav{
+      height:calc(100% -110px); top:110px;     
+   }
+   header .globalHeader nav ul li ,
+   header .globalHeader nav ol li {
+      font-size: 12px;
+   }
+   header .globalHeader nav ul li a,
+   header .globalHeader nav ul li b,
+   header .globalHeader nav ol li a{
+      font-size: 12px;
+   }
+   header .globalHeader nav ul > li:nth-of-type(7) > b,
+   header .globalHeader nav ul > li:nth-of-type(8) > b {
+      padding-bottom:12px;
+   }
+   header .globalUserpage{
+      position: fixed; bottom:0; padding:10px 0; width:100%; 
+      background-color: #fff;  justify-content: center; box-sizing: border-box;
+   }
+   header .globalUserpage span{
+      justify-content:space-between; padding:0 3.5%; box-sizing: border-box;
+   }
+   header .globalUserpage span a:first-of-type{
+      display: flex;align-items: center; gap: 10px;
+   }
+   header .globalUserpage span a:first-of-type .cart-count{
+      padding-top: 5px;
+   }
+   footer{
+      padding-top:30px;
+   }
+   footer >div.globalFooter div{
+      margin-bottom: 30px;
+   }
+   footer >div.globalFooter div:nth-of-type(2) h2,
+   footer >div.globalFooter div:nth-of-type(3) h2{
+      padding-bottom:15px;
+   }
+   footer >div.globalFooter div:nth-of-type(2) h2::after,
+   footer >div.globalFooter div:nth-of-type(3) h2::after{
+      content: ''; display: inline-block; width: 15px; height:15px;
+      margin-left: 5px;  background-image: url('../images/footer_arrow.svg'); background-size: contain; background-repeat: no-repeat; 
+      vertical-align: middle; transition: transform 0.3s ease;
+   }
+   footer >div.globalFooter div:nth-of-type(2) h2.open::after,
+   footer >div.globalFooter div:nth-of-type(3) h2.open::after {
+      transform: rotate(180deg);
+   }
+
+   footer >div.globalFooter div ul[class$='menu']{
+      height: 0; overflow: hidden; transition: height 0.5s ease;
+   }
+   footer >div.globalFooter div:nth-of-type(4) h2{
+      font-size: 15px; margin-bottom: 10px;
+   }
+   footer >div.globalFooter div:nth-of-type(4) p{
+      line-height: 18px; font-size: 12px; margin-bottom: 25px;
+   }
+   footer > div.globalFooter div:nth-of-type(4) .advertisement-input-wrap{
+      position: relative; padding:0;
+   }
+   footer > div.globalFooter div:nth-of-type(4) input[type='email'] {
+      padding: 21px 2% 23px; width:100%;
+   }
+   footer > div.globalFooter div:nth-of-type(4) button[type='submit'] {
+      width:100%;
+   }
+   footer > div.globalFooter div:nth-of-type(4) span.message-error,
+   footer > div.globalFooter div:nth-of-type(4) span.message-completion {
+      top:-20px; width: 100%;  white-space: nowrap;
+   }
+   footer > div.globalFooter div.globalIcons div:last-of-type span{
+      width:28%;
+   }
+}
+@media  screen and (max-width:1279px) {
+   header .searchPopup div:last-child {
+      display: none;
+   }
+   header .globalHeader .material-symbols-outlined,
+   header .globalHeader .mui{
+      display: block;
+   }
+   header .searchPopup div:first-child{
+      box-sizing: border-box;
+   }
+   header .searchPopup .closeBtn {
+      top: 30%;
+   }
+   header .globalHeader h1 a{
+      z-index: 10000; position: relative; margin: 0 auto; display: block;
+   }
+   header .globalHeader .material-symbols-outlined{
+      background-color: transparent; border:none; display: block;
+   }
+   header .globalHeader nav{
+      width:62%; position: fixed; left:0; overflow-y: hidden; display: none;      
+   }
+   header .globalHeader nav.active{
+      display: block;
+   } 
+   header .globalHeader nav ul {
+      transition: height 0.5s ease;
+   }
+   header .globalHeader nav ul li ,
+   header .globalHeader nav ol li {
+      display: block; width:100%; background-color: #fff; border-bottom:1px solid #a6a6a6; opacity: 1; cursor: pointer;  box-sizing: border-box;
+   }
+   header .globalHeader nav ul > li:nth-of-type(7),
+   header .globalHeader nav ul > li:nth-of-type(8){
+      padding-bottom:0;
+   }
+   header .globalHeader nav ol li:first-of-type{
+      border-top:1px solid #a6a6a6;
+   }
+   header .globalHeader nav ul > li:nth-of-type(7):hover > .submenu,
+   header .globalHeader nav ul > li:nth-of-type(8):hover > .submenu{
+      height:100%;
+   }
+   header .globalHeader nav ul > li:nth-of-type(7) ol li:last-of-type,
+   header .globalHeader nav ul > li:nth-of-type(8) ol li:last-of-type{
+      border-bottom:none;
+   }
+   header .globalHeader nav ul li a,
+   header .globalHeader nav ul li b,
+   header .globalHeader nav ol li a{
+      display: block; box-sizing: border-box; padding: 14px 10px 14px 9.8%;
+   }
+   header .globalHeader nav ul > li:nth-of-type(7) > b,
+   header .globalHeader nav ul > li:nth-of-type(8) > b {
+   position: relative; width:100%; box-sizing: border-box;
+   }
+   header .globalHeader nav ul > li:nth-of-type(7) > b::after,
+   header .globalHeader nav ul > li:nth-of-type(8) > b::after {
+   content: url('../images/arrow.png'); display: block;
+   position: absolute; top: 40%; right: 10px;  transform: translateY(-40%);
+   width: 10px; transition: transform 0.3s ease-in;
+   }
+   header .globalHeader nav ul > li:nth-of-type(7) > .submenu,
+   header .globalHeader nav ul > li:nth-of-type(8) > .submenu {
+      width:100%; transition: height 0.5s ease; overflow-y: hidden; height:0;
+      background-color:#fff; 
+   }
+}
+@media screen and (min-width: 768px) and (max-width:1279px){
+   section > div:nth-of-type(2) h3{
+      font-weight: 300;
+   }
+   .order-wrap .order-box .order-list .order-row div p,
+   .address-wrap .address-box .address-list .address-item div p{
+      font-weight: 400;
+   }
+   .payment-wrap > .getItem-wrap .getlist div:first-of-type p,
+   .payment-wrap > .getItem-wrap .getlist div:last-of-type p{
+      font-weight: 550;
+   }
+   header .searchPopup div:first-child,
+   section > div:nth-of-type(2),
+   section > div:nth-of-type(3),
+   section >div.videoBox,
+   .listpagewrap .listindicator,
+   section.listpagewrap > div:nth-of-type(2),
+   section.detailWrap .listindicator,
+   section.detailWrap .detailitem,
+   section.detailWrap > div:nth-child(4),
+   section.detailWrap > div:nth-child(5),
+   section.detailWrap > div:nth-child(7),
+   .myaccount >.account-wrap,
+   .order-wrap .order-box,
+   .order-wrap .order-paging,
+   .address-wrap .address-box,
+   .review-wrap .review-box,
+   .review-wrap .review-paging,
+   .cart-wrap >.cart-box,
+   .payment-wrap > .getItem-wrap,
+   .footer-wrap .backBtn-wrap,
+   .footer-wrap .about-box,
+   .footer-wrap .wholesale-box,
+   .footer-wrap .faqs-box,
+   .footer-wrap .returns-box,
+   .footer-wrap .shopping-box,
+   .footer-wrap .termsofService-box,
+   .footer-wrap .mobileService-box{
+      padding:0 5.8%; box-sizing: border-box;
+   }
+   section.detailWrap > div:nth-child(6){
+      padding:0 3%; box-sizing: border-box;
+   }
+   footer{
+      padding:30px 3%; box-sizing: border-box;
+   }
+   header .searchPopup{
+      top:202px;
+   }
+   header .searchPopup div:first-child{
+      padding:0 5.8%;
+   }
+   header .searchPopup div:first-of-type input[type='search']{
+      padding:30px 1% 30px; font-size: 18px; 
+   }
+   header .searchPopup div:first-of-type input[type='search']::placeholder{
+      font-size: 18px;
+   }
+   header .searchPopup .closeBtn {
+      right: 4%;
+   }
+   header .globalHeader h1 a{
+      position: relative; margin: 0 auto;
+   }
+   header .maincomment{
+      line-height: 40px;
+   }
+   header .maincomment li:not(:first-of-type){
+      margin-left: 2%;
+   }
+   header .globalHeader{
+      padding:90px 2%;
+   }
+   header .globalHeader button{
+      padding:0; margin: 0; background: none; border: none; outline: none;       
+   }
+   header .globalHeader .material-symbols-outlined{
+      width:50px; font-size: 50px; position: absolute; left:5.8%; top: 100px; 
+   }
+   header .globalHeader nav{
+      height:calc(100% -202px); top:202px;    
+   }
+   header .globalHeader nav ul li ,
+   header .globalHeader nav ol li {
+      font-size: 14px;
+   }
+   header .globalHeader nav ul li a,
+   header .globalHeader nav ul li b,
+   header .globalHeader nav ol li a{
+      font-size: 14px;
+   }
+   header .globalHeader nav ul > li:nth-of-type(7) > b,
+   header .globalHeader nav ul > li:nth-of-type(8) > b {
+      padding-bottom:14px;
+   }
+   header .globalUserpage{
+      width:32.35%; justify-content: flex-end; position: absolute; right:5.8%; 
+      top:0; top:107px;
+   }
+   footer >div.globalFooter div:first-of-type{
+      width:50%;
+   }
+   footer >div.globalFooter div:nth-of-type(2),
+   footer >div.globalFooter div:nth-of-type(3){
+      width:25%; 
+   }
+   footer >div.globalFooter div:nth-of-type(4),
+   footer >div.globalFooter div:last-of-type{
+      width:100%;
+   }
+   footer >div.globalFooter div:nth-of-type(4){
+      margin-bottom: 35px;
+   }
+   footer >div.globalFooter div:nth-of-type(4):after{
+      content: ''; display: block; clear:both;
+   }
+   footer >div.globalFooter div:nth-of-type(4) h2{
+      font-size: 15px; margin-bottom: 10px;
+   }
+   footer >div.globalFooter div:nth-of-type(4) p{
+      float:left; width:36%; display: block; line-height: 20px; font-size: 14px;
+   }
+   footer > div.globalFooter div:nth-of-type(4) .advertisement-input-wrap{
+      float:right; width:60%;
+      display: flex; position: relative; padding-bottom:15px;
+   }
+   footer > div.globalFooter div:nth-of-type(4) input[type='email'] {
+      padding: 22px 2% 23px; flex: 0 0 80%; 
+   }
+   footer > div.globalFooter div:nth-of-type(4) button[type='submit'] {
+      flex: 0 0 20%;   
+   }
+   footer > div.globalFooter div:nth-of-type(4) span.message-error,
+   footer > div.globalFooter div:nth-of-type(4) span.message-completion {
+      bottom:0; margin-top: 5px; width: 80%; box-sizing: border-box;
+   }
+}
+@media  screen and (min-width:768px) {
+   header{
+      max-height:202px; min-height:202px;
+   }
+   header .searchPopup div:first-of-type input[type='search']::placeholder{
+      letter-spacing: 1.3px;
+   }
+   header .maincomment ul{
+      text-align: center; cursor: default;
+   }
+   header .maincomment ul{
+      text-align: center; cursor: default;
+   }
+   header .maincomment li{
+      display: inline-block;
+   }
+   header .globalHeader{
+      padding:90px 2%;
+   }
+   header .globalHeader{
+      padding:90px 2%;
+   }
+   header .globalHeader h1 a{
+      max-width:182px; display: block;
+   }
+   header .globalUserpage{
+      display: flex;
+   }
+   header .globalUserpage span{
+      gap:20px;
+   }
+   header .globalUserpage span a:first-of-type:after{
+      content: ''; display: block; clear:both;
+   }
+   header .globalUserpage span a:first-of-type .cart-count{
+      float:right; padding-left: 8px; margin-top: 20%;
+   }
+   footer >div.globalFooter:after{
+      content: ''; display: block; clear:both;
+   }
+   footer >div.globalFooter > div{
+      float:left;
+   }
+   footer >div.globalFooter div:not(:first-of-type) h2{
+      margin-bottom: 25px;
+   }
+}
+@media screen and (min-width:1280px) {
+   header .searchPopup div:first-child,
+   header .searchPopup > div:last-child,
+   section > div:first-of-type,
+   section > div:nth-of-type(2),
+   section > div:nth-of-type(3),
+   section >div.videoBox,
+   footer >div.globalFooter,
+   header .globalHeader,
+   section >div.listindicator,
+   section.listpagewrap > div:nth-of-type(2) .listwrap,
+   section.listpagewrap .paging,
+   section.detailWrap .detailitem,
+   section.detailWrap > div:nth-child(4),
+   section.detailWrap > div:nth-child(5),
+   section.detailWrap > div:nth-child(6),
+   section.detailWrap > div:nth-child(7),
+   .loginWrap,
+   .myaccount >div,
+   .order-wrap >div,
+   .backBtn-wrap,
+   .payment-wrap .payment-box,
+   .wholesale-box,
+   .about-box,
+   .faqs-box,
+   .returns-box,
+   .shopping-box,
+   .termsofService-box,
+   .mobileService-box{
+      max-width:1820px; margin: 0 auto;
+   }
+   header .globalHeader .material-symbols-outlined{
+      display: none;
+   }
+   header .searchPopup{
+      top:45px; padding-bottom:150px;
+   }
+   header .searchPopup div:first-child{
+      padding:0 2%; margin-bottom: 150px;
+   }
+   header .searchPopup div:first-of-type input[type='search']{
+      padding:33px 1% 0; font-size: 20px;
+   }
+   header .searchPopup div:first-of-type input[type='search']::placeholder{
+      font-size: 20px;
+   }
+   header .searchPopup .closeBtn {
+      right: 4%; top: 4%;
+   }
+   header .searchPopup > div:last-child{
+      padding:0 2%; box-sizing: border-box;
+   }
+   header .searchPopup div:last-child p{
+      font-size: 20px; margin-bottom: 100px;
+   }
+   header .searchPopup div:last-child div figure{
+      float:left; width:23.5%;  background-color:#fff; max-width:420px;
+      text-align: center;
+   }
+   header .searchPopup div:last-child div:after{
+      content: ''; display: block; clear:both;
+   }
+   header .searchPopup div:last-child div figure:not(:first-child){
+      margin-left: 2%;
+   }
+   header .searchPopup div:last-child div figure a{
+      display: block; margin-bottom: 10px;
+   }
+   header .searchPopup div:last-child div figure a img{
+      width:100%;
+   }
+   header .searchPopup div:last-child div figure figcaption dl dt{
+      font-size: 18px; margin-bottom: 10px;
+   }
+   header .searchPopup div:last-child div figure figcaption dl dd:first-of-type{
+      font-size: 12px; margin-bottom: 20px;
+   }
+   header .searchPopup div:last-child div figure figcaption dl dd:last-of-type{
+      font-size: 12px; 
+   }
+   header .maincomment{
+      line-height: 45px;
+   }
+   header .maincomment li:not(:first-of-type){
+      margin-left: 1%;
+   }
+   header .globalHeader h1{
+      float:left; width:30%;
+   }
+   header .globalHeader nav{
+      float:left; width:56%;
+   }
+   header .globalHeader nav ul{
+      font-size: 0; padding-top:20px;
+   }
+   header .globalHeader nav ul > li{
+      display: inline-block; font-size: 14px;
+   }
+   header .globalHeader nav ul > li:not(:first-of-type){
+      margin-left: 2.8%;
+   }
+   header .globalHeader nav ul > li b{
+      vertical-align: top;
+   }
+   header .globalHeader nav ul > li:not(:nth-of-type(7)):not(:nth-of-type(8)) b{
+      cursor: pointer;
+   }
+   header .globalHeader nav ul > li:nth-of-type(7) b,
+   header .globalHeader nav ul > li:nth-of-type(8) b{
+      cursor: default; display: block; padding-bottom:35px;
+   }
+   header .globalHeader nav ul > li:nth-of-type(7) > b::after,
+   header .globalHeader nav ul > li:nth-of-type(8) > b::after {
+      content: url('../images/arrow.png'); display: inline-block;
+      width: 10px; margin-left: 5px; vertical-align: middle;
+      transition: transform 0.3s ease-in;  margin-top: -5px;
+   }
+   header .globalHeader nav ul > li:nth-of-type(7):hover ol,
+   header .globalHeader nav ul > li:nth-of-type(8):hover ol{
+      display: block; 
+   }
+   header .globalHeader nav ul > li:nth-of-type(7) ol,
+   header .globalHeader nav ul > li:nth-of-type(8) ol{
+      position: absolute; border:1px solid #eee; background-color: #fff; display: none; padding-top: 5px; border-left:none; border-right:none;
+   }
+   header .globalHeader nav ul > li:nth-of-type(7) ol li,
+   header .globalHeader nav ul > li:nth-of-type(8) ol li{
+      line-height: 35px; cursor: pointer;
+   }
+   header .globalHeader nav ul > li:nth-of-type(7) ol{
+      max-width:150px; width:191%; margin-left: -15px;
+   }
+   header .globalHeader nav ul > li:nth-of-type(8) ol{
+      max-width:150px; width:191%; margin-left: -20px;
+   }
+   header .globalHeader nav ul > li:nth-of-type(7) ol li{
+      padding-left: 15px;
+   }
+   header .globalHeader nav ul > li:nth-of-type(8) ol li{
+      padding-left:20px;
+   }
+   header .globalHeader nav ul > li:nth-of-type(7) ol li a,
+   header .globalHeader nav ul > li:nth-of-type(8) ol li a{
+      font-size: 14px; line-height: 30px;
+   }
+   header .globalUserpage{
+      float:left; width:14%; justify-content: flex-end;
+   }
+   footer >div.globalFooter{
+      padding:50px 2%; box-sizing: border-box;
+   }
+   footer >div.globalFooter div:first-of-type,
+   footer >div.globalFooter div:nth-of-type(4){
+      width:30%;
+   }
+   footer >div.globalFooter div:nth-of-type(2),
+   footer >div.globalFooter div:nth-of-type(3){
+      width:20%;
+   }
+   footer >div.globalFooter div:last-of-type{
+      width:100%;
+   }
+   footer >div.globalFooter div:nth-of-type(4) p{
+      font-size: 14px; line-height: 20px; margin-bottom: 15px;
+   }
+   footer > div.globalFooter div:nth-of-type(4) .advertisement-input-wrap{
+      display: flex; gap: 3%; width: 100%; position: relative; padding-bottom:15px;
+   }
+   footer > div.globalFooter div:nth-of-type(4) input[type='email'] {
+      padding: 22px 2% 23px; flex: 0 0 80%; 
+   }
+   footer > div.globalFooter div:nth-of-type(4) button[type='submit'] {
+      flex: 0 0 17%;       
+   }
+   footer > div.globalFooter div:nth-of-type(4) span.message-error,
+   footer > div.globalFooter div:nth-of-type(4) span.message-completion {
+      bottom:0; margin-top: 5px; width: 80%; box-sizing: border-box;
+   }
+   footer > div.globalFooter div.globalIcons{
+      margin-top: 65px;
+   }
+   
+}
+
+
+
+
+
+ 

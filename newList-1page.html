@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Barker</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/harryBarker.js"></script>
+    <script src="js/global.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+
+<body>
+    <header>
+        <div class="searchPopup">
+            <div>
+                <input type="search" placeholder="Search store">
+                <button class="closeBtn">
+                    <img src="images/btn_close_search.svg" alt="search btn_close_search">
+                </button>
+            </div>
+            <div>
+                <p>Featured Products of the Month</p>
+                <div>
+                    <figure>
+                        <a href="new05-detail.html"><img src="images/new_04.png" alt="Stainless Steel Food Scoop"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Stainless Steel Food Scoop</dt>
+                                <dd>EAT</dd>
+                                <dd>From $12.00</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="new06-detail.html"><img src="images/new_05.png"
+                                alt="6-Pack Rubber Ball Set - Medium"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>6-Pack Rubber Ball Set - Medium</dt>
+                                <dd>PLAY</dd>
+                                <dd>From $26.00</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="new07-detail.html"><img src="images/new_06.png" alt="Plaid Dinosaur Dog Toy"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Plaid Dinosaur Dog Toy</dt>
+                                <dd>PLAY</dd>
+                                <dd>From $16.00</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="new08-detail.html"><img src="images/new_07.png" alt="rubber bone"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>rubber bone</dt>
+                                <dd>PLAY</dd>
+                                <dd>From $12.00 / $15.00 / $17.00</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="maincomment">
+            <ul>
+                <li>
+                    <p>ECO-FRIENDLY </p>
+                </li>
+                <li>
+                    <p>RECYCLED</p>
+                </li>
+                <li>
+                    <p>ALL-NATUTAL</p>
+                </li>
+                <li>
+                    <p>FREE-SHIPPING OVER $150</p>
+                </li>
+            </ul>
+        </div>
+        <div class="globalHeader">
+            <h1>
+                <a href="index_after.html"><img src="images/header_logo.png" alt="hello Harry Barker"></a>
+            </h1>
+            <button type="button" class="manu-btn" id="mui">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <nav>
+                <ul>
+                    <li><b>NEW</b></li>
+                    <li><b>SLEEP</b></li>
+                    <li><b>EAT</b></li>
+                    <li><b>WALK</b></li>
+                    <li><b>PLAY</b></li>
+                    <li><b>APPAREL</b></li>
+                    <li class="menu-li"><b>CAT</b>
+                        <ol class="submenu">
+                            <li><a href="catList-shopAll.html">SHOP ALL</a></li>
+                            <li><a href="catList-beds.html">BEDS</a></li>
+                            <li><a href="catList-furniture.html">FURNITURE</a></li>
+                            <li><a href="catList-bowls.html">BOWLS</a></li>
+                        </ol>
+                    </li>
+                    <li class="menu-li"><b>COLLECTIONS</b>
+                        <ol class="submenu">
+                            <li><a href="farmhouseList.html">FARMHOUSE</a></li>
+                            <li><a href="neutralList.html">NEUTRAL</a></li>
+                            <li><a href="holidayList.html">HOLIDAY</a></li>
+                        </ol>
+                    </li>
+                    <li><b>SALE</b></li>
+                </ul>
+            </nav>
+            <div class="globalUserpage">
+                <span>
+                    <a href="usercart.html">
+                        <img src="images/cart.svg" alt="globalCart">
+                        <span class="cart-count">2</span>
+                    </a>
+                    <input type="button" value="search" data-popup="searchPopup" class="btn_Search">
+                    <a href="myaccount.html">
+                        <img src="images/person.svg" alt="globalUserpage">
+                    </a>
+                     <input type="button" value="logout" class="logout">
+                </span>
+            </div>
+        </div>
+    </header>
+    <section class="listpagewrap">
+        <div class="listindicator">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>/</li>
+                    <li>New</li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <h2>NEW</h2>
+            <div class="listwrap">
+                <ul>
+                    <li>
+                        <figure>
+                            <a href="new01-detail.html">
+                                <img src="../harrybarker/images/list/new/new_01.jpg" alt="LuxeFauxFurPeltBed">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Luxe Faux Fur Pelt Bed</dt>
+                                    <dd>SLEEP</dd>
+                                    <dd>From $134.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new02-detail.html">
+                                <img src="../harrybarker/images/list/new/new_02.jpg"
+                                    alt="4-Pack Rubber Ball Set - Large">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>4-Pack Rubber Ball Set - Large</dt>
+                                    <dd>PLAY</dd>
+                                    <dd>From $18.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new03-detail.html">
+                                <img src="../harrybarker/images/list/new/new_03.jpg" alt="Floral Print Ostrich Dog Toy">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Floral Print Ostrich Dog Toy</dt>
+                                    <dd>PLAY</dd>
+                                    <dd>From $16.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new04-detail.html">
+                                <img src="../harrybarker/images/list/new/new_04.jpg"
+                                    alt="Raised Slanted Cat Bowl Set - Blue">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Raised Slanted Cat Bowl Set - Blue</dt>
+                                    <dd>EAT</dd>
+                                    <dd>From $10.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new05-detail.html">
+                                <img src="../harrybarker/images/list/new/new_05.jpg" alt="Stainless Steel Food Scoop">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Stainless Steel Food Scoop</dt>
+                                    <dd>EAT</dd>
+                                    <dd>From $12.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new06-detail.html">
+                                <img src="../harrybarker/images/list/new/new_06.jpg"
+                                    alt="6-Pack Rubber Ball Set - Medium">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>6-Pack Rubber Ball Set - Medium</dt>
+                                    <dd>PLAY</dd>
+                                    <dd>From $26.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new07-detail.html">
+                                <img src="../harrybarker/images/list/new/new_07.jpg" alt="Plaid Dinosaur Dog Toy">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Plaid Dinosaur Dog Toy</dt>
+                                    <dd>PLAY</dd>
+                                    <dd>From $16.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new08-detail.html">
+                                <img src="../harrybarker/images/list/new/new_08.jpg" alt="rubber bone">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>rubber bone</dt>
+                                    <dd>PLAY</dd>
+                                    <dd>From $12.00 / $15.00 / $17.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <span>
+                            <button>SMALL</button>
+                            <button>MEDIUM</button>
+                            <button>LARGE</button>
+                        </span>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new09-detail.html">
+                                <img src="../harrybarker/images/list/new/new_09.png" alt="Scratch Pad Refills - 2 Pack">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Scratch Pad Refills - 2 Pack</dt>
+                                    <dd>PLAY</dd>
+                                    <dd>From $28.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new10-detail.html">
+                                <img src="../harrybarker/images/list/new/new_10.jpg"
+                                    alt="Slanted Modern Cat Bowl Set - Natural">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Slanted Modern Cat Bowl Set - Natural</dt>
+                                    <dd>EAT</dd>
+                                    <dd>From $12.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new11-detail.html">
+                                <img src="../harrybarker/images/list/new/new_11.png"
+                                    alt="I'm Feline Good Ceramic Cat Bowl - White">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>I'm Feline Good Ceramic Cat Bowl - White</dt>
+                                    <dd>EAT</dd>
+                                    <dd>From $12.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new12-detail.html">
+                                <img src="../harrybarker/images/list/new/new_12.jpg"
+                                    alt="Denim Stripe Sisal Cat Scratching Post">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Denim Stripe Sisal Cat Scratching Post</dt>
+                                    <dd>PLAY</dd>
+                                    <dd>From $38.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new13-detail.html">
+                                <img src="../harrybarker/images/list/new/new_13.jpg" alt="Durable Rubber Baton">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Durable Rubber Baton</dt>
+                                    <dd>PLAY</dd>
+                                    <dd>From $10.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new14-detail.html">
+                                <img src="../harrybarker/images/list/new/new_14.jpg"
+                                    alt="Glow In The Dark Fetch Ball 2-Pack">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Glow In The Dark Fetch Ball 2-Pack</dt>
+                                    <dd>PLAY</dd>
+                                    <dd>From $12.00 / $14.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <span>
+                            <button>2.5”</button>
+                            <button>3”</button>
+                        </span>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new15-detail.html">
+                                <img src="../harrybarker/images/list/new/new_15.jpg"
+                                    alt="Bone Appetit Ceramic Dog Bowl - White">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Bone Appetit Ceramic Dog Bowl - White</dt>
+                                    <dd>EAT</dd>
+                                    <dd>From $16.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <span>
+                            <button>SMALL</button>
+                            <button>LARGE</button>
+                        </span>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new16-detail.html">
+                                <img src="../harrybarker/images/list/new/new_16.jpg"
+                                    alt="Airtight Eco-Friendly Plastic Food Storage">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Airtight Eco-Friendly Plastic Food Storage</dt>
+                                    <dd>EAT</dd>
+                                    <dd>From $58.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new17-detail.html">
+                                <img src="../harrybarker/images/list/new/new_17.jpg"
+                                    alt="Modern Dog Bowl Set - Natural">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Modern Dog Bowl Set - Natural</dt>
+                                    <dd>EAT</dd>
+                                    <dd>From $14.00 /$18.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <span>
+                            <button>SMALL</button>
+                            <button>LARGE</button>
+                        </span>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new18-detail.html">
+                                <img src="../harrybarker/images/list/new/new_18.jpg" alt="Wooden Pet house">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Wooden Pet house</dt>
+                                    <dd>FURNITURE</dd>
+                                    <dd>From $100.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new19-detail.html">
+                                <img src="../harrybarker/images/list/new/new_19.jpg"
+                                    alt="Modular Wood Hammock - Stackable Cat cube">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Modular Wood Hammock - Stackable Cat cube</dt>
+                                    <dd>FURNITURE</dd>
+                                    <dd>From $80.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new20-detail.html">
+                                <img src="../harrybarker/images/list/new/new_20.jpg"
+                                    alt="Cat Scratcher Bowl - Refillable">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Cat Scratcher Bowl - Refillable</dt>
+                                    <dd>FURNITURE</dd>
+                                    <dd>From $40.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new21-detail.html">
+                                <img src="../harrybarker/images/list/new/new_21.jpg" alt="Polka Dot Dinosaur Dog Toy">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Polka Dot Dinosaur Dog Toy</dt>
+                                    <dd>PLAY</dd>
+                                    <dd>From $16.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new22-detail.html">
+                                <img src="../harrybarker/images/list/new/new_22.jpg" alt="Furry Mammoth Dog Toy">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Furry Mammoth Dog Toy</dt>
+                                    <dd>PLAY</dd>
+                                    <dd>From $16.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new23-detail.html">
+                                <img src="../harrybarker/images/list/new/new_23.jpg" alt="Plush Panda Dog Toy">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Plush Panda Dog Toy</dt>
+                                    <dd>PLAY</dd>
+                                    <dd>From $16.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="new24-detail.html">
+                                <img src="../harrybarker/images/list/new/new_24.jpg"
+                                    alt="Cat Scratching Post with Wicker Bed">
+                            </a>
+                            <figcaption>
+                                <dl>
+                                    <dt>Cat Scratching Post with Wicker Bed</dt>
+                                    <dd>SLEEP</dd>
+                                    <dd>From $78.00</dd>
+                                </dl>
+                            </figcaption>
+                        </figure>
+                        <input type="button" value="Add directly">
+                    </li>
+                </ul>
+            </div>
+            <div class="paging newList-1page">
+                <a href="newList-1page.html"></a>
+                <a href="newList-2page.html"></a>
+                <ol>
+                    <li><a href="newList-1page.html">1</a></li>
+                    <li><a href="newList-2page.html">2</a></li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="globalFooter">
+            <div>
+                <h2><a href="index_after.html"><img src="images/footer_logo.png" alt="bye Harry Barker"></a></h2>
+            </div>
+            <div>
+                <h2 class="about-toggle">ABOUT HARRY BARKER</h2>
+                <ul class="about-menu">
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="wholesale.html">Wholesale</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="customer-toggle">CUSTOMER SERVICE</h2>
+                <ul class="customer-menu">
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="returns-Exchanges.html">Returns & Exchanges</a></li>
+                    <li><a href="shippingPolicies.html">Shipping Policies</a></li>
+                    <li><a href="termsofService.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>KEEP IN TOUCH</h2>
+                <p>Sign up to our email newsletter for updates, special offers, new arrivals and more!</p>
+                <div class="advertisement-input-wrap">
+                    <input type="email" title="us email">
+                    <button type="submit">OK</button>
+                    <span class="message-error">Please enter your email address in this format.</span>
+                    <span class="message-completion">Thanks for subscribe complete!</span>
+                </div>
+            </div>
+            <div class="globalIcons">
+                <div>
+                    <span>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://harrybarker.com/">
+                        </a>
+                        <a href="https://www.instagram.com/harrybarker_co/#">
+                        </a>
+                    </span>
+                </div>
+                <div>
+                    <span><img src="images/card_00.png" alt="amexcard"></span>
+                    <span><img src="images/card_01.png" alt="applepay"></span>
+                    <span><img src="images/card_02.png" alt="googlepay"></span>
+                    <span><img src="images/card_03.png" alt="Mastercard"></span>
+                    <span><img src="images/card_04.png" alt="shoppay"></span>
+                    <span><img src="images/card_05.png" alt="UnionPay"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
