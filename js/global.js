@@ -17,7 +17,7 @@ function searchpopup() {
 
 function popupOpen() {
   $("[data-popup]").click(function () {
-    var target = $(this).data("popup"); // ex: 'searchPopup'
+    var target = $(this).data("popup");
     $("." + target).addClass("active");
   });
 }
@@ -56,7 +56,6 @@ function toggleMenu(){
     $('#mui').click(function(){
       $('header .globalHeader nav').toggleClass('active');
 
-      // 아이콘 변경 (menu ↔ close)
       const icon = $(this).find('.material-symbols-outlined');
       icon.text(icon.text() == 'menu' ? 'close' : 'menu');
     });
@@ -74,18 +73,6 @@ function logOut() {
     window.location.href = "index.html";
   })
 }
-
-//childern :직계자식 nav바의 구조상 ol > li > a 직계 
-//find() : 모든 자손 요소 선택
-//attr : 속성을 가져오다 
-
-
-//window.location.href page를 이동시킴
-//this = $("nav ul > li >b") 지금 클릭한 b this 대상을 지정하다.
-//.text() =태그안의 글자만 가져옴
-//.trim() = 앞뒤의 공백제거 충돌,오류방지를 위한 목적 ?
-
-
 
 function footersnsinput() {
   $(".advertisement-input-wrap button[type='submit']").click(function (e) {
